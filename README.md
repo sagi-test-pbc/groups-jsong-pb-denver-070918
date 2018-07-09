@@ -1,5 +1,5 @@
 
-# Groups, Generator Point and Public Point
+# Groups and the Generator Point
 
 ### Mathematical Groups
 
@@ -129,35 +129,4 @@ from ecc import G
 
 n = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
 print(n*G)
-```
-
-# Public Points
-
-
-```python
-# Getting the public point from a secret
-from ecc import G
-
-secret = 999
-point = secret*G
-print(point)
-```
-
-### Try it
-
-#### 5.1. Get the public point where the scalar is the following:
-```
-7, 1485, 2**128, 2**240+2**31
-```
-
-
-```python
-# Exercise 5.1
-
-from ecc import G
-
-secrets = (7, 1485, 2**128, 2**240+2**31)
-
-# iterate over secrets
-    # get the public point
 ```
